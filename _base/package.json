@@ -1,0 +1,35 @@
+{
+	"name": "@discordjs/voice-examples-base",
+	"version": "0.0.1",
+	"description": "An example receiver bot written using @discordjs/voice",
+	"main": "dist/bot.js",
+	"scripts": {
+		"start": "npm run build && node dist/bot",
+		"lint": "prettier --cache --check . && eslint src --ext mjs,js,ts --cache",
+		"format": "prettier --cache --write . && eslint src --ext mjs,js,ts --fix --cache",
+		"build": "rimraf dist && tsc",
+		"build:check": "tsc --noEmit --incremental false"
+	},
+	"author": "Amish Shah <contact@shah.gg>",
+	"license": "MIT",
+	"dependencies": {
+		"@discordjs/opus": "^0.8.0",
+		"@discordjs/voice": "^0.11.0",
+		"discord-api-types": "^0.33.5",
+		"discord.js": "^13.10.3",
+		"libsodium-wrappers": "^0.7.10",
+		"prism-media": "^2.0.0-alpha.0"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.36.1",
+		"@typescript-eslint/parser": "^5.36.1",
+		"eslint": "^8.23.0",
+		"eslint-config-marine": "^9.4.1",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-import-resolver-typescript": "^3.5.0",
+		"eslint-plugin-import": "^2.26.0",
+		"prettier": "^2.7.1",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.8.2"
+	}
+}

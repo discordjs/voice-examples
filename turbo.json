@@ -1,0 +1,23 @@
+{
+	"$schema": "https://turborepo.org/schema.json",
+	"pipeline": {
+		"build:check": {
+			"dependsOn": ["^build:check"],
+			"outputs": []
+		},
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"]
+		},
+		"lint": {
+			"dependsOn": ["build"],
+			"outputs": []
+		},
+		"format": {
+			"outputs": []
+		},
+		"fmt": {
+			"outputs": []
+		}
+	}
+}
