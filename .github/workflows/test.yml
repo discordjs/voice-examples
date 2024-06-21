@@ -8,12 +8,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install node.js v16
+      - name: Install node.js v20
         uses: actions/setup-node@v4
         with:
-          node-version: 16
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
+          node-version: 20
+          cache: 'pnpm'
 
       - name: Turbo cache
         id: turbo-cache
@@ -25,10 +24,10 @@ jobs:
             turbo-${{ github.job }}-${{ github.ref_name }}-
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: ESLint
-        run: npm run lint -- --cache-dir=".turbo"
+        run: pnpm run lint -- --cache-dir=".turbo"
 
       - name: Build
-        run: npm run build -- --cache-dir=".turbo"
+        run: pnpm run build -- --cache-dir=".turbo"
