@@ -4,11 +4,12 @@
 	"description": "A collection of examples showcasing @discordjs/voice",
 	"private": true,
 	"scripts": {
+		"build": "turbo run build",
 		"build:check": "turbo run build:check",
 		"lint": "turbo run lint",
 		"format": "turbo run format",
 		"fmt": "turbo run format",
-		"postinstall": "is-ci || husky install"
+		"prepare": "is-ci || husky install"
 	},
 	"contributors": [
 		"Crawl <icrawltogo@gmail.com>",
