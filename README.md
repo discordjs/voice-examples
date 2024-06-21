@@ -19,12 +19,12 @@ A list of ready-to-run examples for `@discordjs/voice`.
 
 ## How to try them out
 
-All you have to do is copy the example directory of your choosing, install the dependencies, fill in the `config.json` file and run `npm run start`.
+All you have to do is copy the example directory of your choosing, install the dependencies, fill in the `config.json` file, and run `npm run start`.
 
 ## Links
 
-- [Website](https://discord.js.org/) ([source](https://github.com/discordjs/discord.js/tree/main/packages/website))
-- [Documentation](https://discord.js.org/#/docs/voice)
+- [Website](https://discord.js.org/) ([source](https://github.com/discordjs/discord.js/tree/main/apps/website))
+- [Documentation](https://discord.js.org/docs/packages/voice/stable)
 - [Guide](https://discordjs.guide/) ([source](https://github.com/discordjs/guide))
 - [discord.js Discord server](https://discord.gg/djs)
 - [Discord API Discord server](https://discord.gg/discord-api)
@@ -34,9 +34,9 @@ All you have to do is copy the example directory of your choosing, install the d
 
 ## Contributing
 
-Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
-[documentation](https://discord.js.org/#/docs/voice).  
-See [the contribution guide](https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md) if you'd like to submit a PR.
+Before creating an issue, please ensure it hasn't already been reported/suggested, and double-check the
+[documentation](https://discord.js.org/docs/packages/voice/stable).
+See [the contribution guide](https://github.com/discordjs/voice-examples/blob/main/.github/CONTRIBUTING.md) if you'd like to submit a PR.
 
 ## Help
 
