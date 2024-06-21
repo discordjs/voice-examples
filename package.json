@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json.schemastore.org/package.json",
 	"name": "@discordjs/voice-examples",
 	"version": "0.0.0",
 	"description": "A collection of examples showcasing @discordjs/voice",
@@ -9,7 +10,7 @@
 		"lint": "turbo run lint",
 		"format": "turbo run format",
 		"fmt": "turbo run format",
-		"prepare": "is-ci || husky install"
+		"prepare": "is-ci || husky"
 	},
 	"contributors": [
 		"Crawl <icrawltogo@gmail.com>",
@@ -33,29 +34,18 @@
 	},
 	"homepage": "https://discord.js.org",
 	"engines": {
-		"node": ">=16.9.0"
+		"node": ">=18"
 	},
-	"workspaces": [
-		"_base",
-		"basic",
-		"radio-bot",
-		"recorder"
-	],
-	"packageManager": "npm@8.11.0",
+	"packageManager": "pnpm@9.1.4",
 	"devDependencies": {
-		"@commitlint/cli": "^17.1.2",
-		"@commitlint/config-angular": "^17.1.0",
-		"@typescript-eslint/eslint-plugin": "^5.36.1",
-		"@typescript-eslint/parser": "^5.36.1",
-		"eslint": "^8.23.0",
-		"eslint-config-marine": "^9.4.1",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-import-resolver-typescript": "^3.5.0",
-		"eslint-plugin-import": "^2.26.0",
-		"husky": "^8.0.1",
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-angular": "^19.3.0",
+		"eslint": "^8.57.0",
+		"eslint-config-neon": "^0.1.62",
+		"husky": "^9.0.11",
 		"is-ci": "^3.0.1",
-		"prettier": "^2.7.1",
-		"turbo": "^1.4.3",
-		"typescript": "^4.8.2"
+		"prettier": "^3.3.0",
+		"turbo": "^1.13.3",
+		"typescript": "5.4.5"
 	}
 }
