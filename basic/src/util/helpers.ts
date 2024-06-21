@@ -45,6 +45,7 @@ export async function connectToChannel(channel: VoiceBasedChannel) {
 		 * is aware that we failed to connect to the channel.
 		 */
 		connection.destroy();
+
 		throw error;
 	}
 }

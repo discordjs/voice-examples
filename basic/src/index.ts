@@ -38,8 +38,6 @@ client.once(Events.ClientReady, async () => {
 client.on(Events.MessageCreate, async (message) => {
 	if (message.author.bot || !message.inGuild() || !message.mentions.has(message.client.user.id)) return;
 
-	console.log(message.mentions, message.content);
-
 	if (message.content.includes('join')) {
 		if (!message.member?.voice.channel) {
 			await message.reply('Join a voice channel then try again!');
@@ -59,6 +57,7 @@ client.on(Events.MessageCreate, async (message) => {
 			 * voice channel.
 			 */
 			connection.subscribe(player);
+
 			await message.reply('Playing now!');
 		} catch (error) {
 			/**

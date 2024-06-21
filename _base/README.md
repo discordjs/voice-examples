@@ -14,9 +14,9 @@ The template to use when creating a new example for voice. Steps to follow:
 $ npm install
 $ npm run build
 
-# Set a bot token (see config.example.json)
-$ cp config.example.json config.json
-$ nano config.json
+# Set a bot token (see .env.example)
+$ cp .env.example .env
+$ nano .env
 
 # Start the bot!
 $ npm start
