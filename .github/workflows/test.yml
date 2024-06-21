@@ -8,6 +8,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Install node.js v20
         uses: actions/setup-node@v4
         with:
