@@ -15,7 +15,7 @@
 	"contributors": [
 		"Crawl <icrawltogo@gmail.com>",
 		"Amish Shah <amishshah.2k@gmail.com>",
-		"Vlad Frangu <kingdgrizzle@gmail.com>",
+		"Vlad Frangu <me@vladfrangu.dev>",
 		"SpaceEEC <spaceeec@yahoo.com>",
 		"Aura Román <kyradiscord@gmail.com>"
 	],
@@ -33,10 +33,6 @@
 		"url": "https://github.com/discordjs/voice-examples/issues"
 	},
 	"homepage": "https://discord.js.org",
-	"engines": {
-		"node": ">=18"
-	},
-	"packageManager": "pnpm@9.1.4",
 	"devDependencies": {
 		"@commitlint/cli": "^19.3.0",
 		"@commitlint/config-angular": "^19.3.0",
@@ -47,5 +43,13 @@
 		"prettier": "^3.3.0",
 		"turbo": "^1.13.3",
 		"typescript": "5.4.5"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "pnpm@9.1.4",
+	"volta": {
+		"node": "18.20",
+		"pnpm": "9.1.4"
 	}
 }
