@@ -19,7 +19,7 @@ A list of ready-to-run examples for `@discordjs/voice`.
 
 ## How to try them out
 
-All you have to do is copy the example directory of your choosing, install the dependencies, fill in the `config.json` file, and run `npm run start`.
+All you have to do is copy the example directory of your choosing, install the dependencies, fill in the `.env` file, and run `npm run start`.
 
 ## Links
 
