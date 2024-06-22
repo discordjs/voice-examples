@@ -14,9 +14,12 @@ A proof-of-concept radio bot that uses @discordjs/voice and discord.js. Streams 
 $ npm install
 $ npm run build
 
-# Set a bot token (see config.example.json)
-$ cp config.example.json config.json
-$ nano config.json
+# Set a bot token (see .env.example)
+$ cp .env.example .env
+$ nano .env
+
+# Configure device, max transmission gap, and type (see src/config.ts)
+$ nano src/config.ts
 
 # Start the bot!
 $ npm start
@@ -32,14 +35,13 @@ DirectShow audio devices
     Alternative name "@device_cm_{ID1}\wave_{ID2}"
 ```
 
-For example, playing the above device will mirror audio from the speaker output of your machine. Your `config.json` should then be considered like so:
+For example, playing the above device will mirror audio from the speaker output of your machine. Your `config.ts` should then be considered like so:
 
 ```json
 {
-	"token": "discord_bot_token",
 	"device": "Stereo Mix (Realtek(R) Audio)",
+	"maxTransmissionGap": 5_000
 	"type": "dshow",
-	"maxTransmissionGap": 5000
 }
 ```
 
@@ -51,13 +53,12 @@ Run `pactl list short sources` and observe output containing something similar:
 5   alsa_output.pci.3.analog-stereo.monitor   module-alsa-card.c   s16le 2ch 44100Hz   IDLE
 ```
 
-Then configure your `config.json` with the device you'd like to use:
+Then configure your `config.ts` with the device you'd like to use:
 
 ```json
 {
-	"token": "discord_bot_token",
 	"device": "alsa_output.pci.3.analog-stereo.monitor",
+	"maxTransmissionGap": 5_000
 	"type": "pulse",
-	"maxTransmissionGap": 5000
 }
 ```
