@@ -16,21 +16,21 @@ const recordable = new Set<Snowflake>();
 client.on(Events.InteractionCreate, async (interaction) => {
 	if (!interaction.inCachedGuild() || !interaction.isChatInputCommand()) return;
 
-	const handler = interactionHandlers.get(interaction.commandName);
+	const handleInteraction = interactionHandlers.get(interaction.commandName);
 
 	try {
-		if (!handler) {
+		if (!handleInteraction) {
 			await interaction.reply('Unknown command');
 
 			return;
 		}
 
-		await handler(interaction, recordable);
+		await handleInteraction(interaction, recordable);
 	} catch (error) {
 		console.warn(error);
 	}
 });
 
-client.on(Events.Error, console.warn);
+client.on(Events.Error, console.error);
 
 await client.login(process.env.TOKEN);

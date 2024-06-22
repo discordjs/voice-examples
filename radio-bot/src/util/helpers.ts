@@ -1,10 +1,10 @@
 import type { Readable } from 'node:stream';
 import {
-	StreamType,
-	VoiceConnectionStatus,
 	createAudioResource,
 	entersState,
 	joinVoiceChannel,
+	StreamType,
+	VoiceConnectionStatus,
 	type AudioPlayer,
 	type VoiceConnection,
 } from '@discordjs/voice';

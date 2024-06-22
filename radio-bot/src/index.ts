@@ -1,5 +1,5 @@
 import process from 'node:process';
-import { NoSubscriberBehavior, createAudioPlayer, AudioPlayerStatus } from '@discordjs/voice';
+import { createAudioPlayer, AudioPlayerStatus, NoSubscriberBehavior } from '@discordjs/voice';
 import { Client, Events, GatewayIntentBits } from 'discord.js';
 import { config } from './config.js';
 import { attachRecorder, connectToChannel } from './util/helpers.js';
@@ -27,8 +27,8 @@ const client = new Client({
 	intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildVoiceStates],
 });
 
-client.on(Events.ClientReady, () => {
-	console.log('discord.js client is ready!');
+client.once(Events.ClientReady, () => {
+	console.log('Ready!');
 
 	attachRecorder(player);
 });

@@ -68,6 +68,7 @@ function trackGuild(guild: Guild) {
 export function createDiscordJSAdapter(channel: VoiceBasedChannel): DiscordGatewayAdapterCreator {
 	return (methods) => {
 		adapters.set(channel.guild.id, methods);
+
 		trackClient(channel.client);
 		trackGuild(channel.guild);
 

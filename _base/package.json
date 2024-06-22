@@ -11,7 +11,7 @@
 		"format": "prettier --cache --write . && eslint src --ext mjs,js,ts --fix --cache",
 		"start": "npm run build && node --env-file=.env dist/index.js"
 	},
-	"author": "Amish Shah <contact@shah.gg>",
+	"author": "Amish Shah <amishshah.2k@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
 		"@discordjs/opus": "^0.9.0",

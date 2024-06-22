@@ -5,7 +5,7 @@ type Config = {
 };
 
 export const config: Config = {
-	device: 'alsa_output.usb-Logitech_PRO_X_000000000000-00.analog-stereo.monitor',
+	device: 'audio_hw_device_id',
 	maxTransmissionGap: 5_000,
 	type: 'pulse',
 };

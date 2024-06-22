@@ -18,7 +18,7 @@ const client = new Client({
 });
 
 client.once(Events.ClientReady, async () => {
-	console.log('Discord.js client is ready!');
+	console.log('Ready!');
 
 	/**
 	 * Try to get our song ready to play for when the bot joins a voice channel
@@ -26,7 +26,7 @@ client.once(Events.ClientReady, async () => {
 	try {
 		await playSong(player, 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
 
-		console.log('Song is ready to play!');
+		console.log('Ready to play the song!');
 	} catch (error) {
 		/**
 		 * The song isn't ready to play for some reason :(

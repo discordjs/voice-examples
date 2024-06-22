@@ -10,7 +10,7 @@ and save the audio to local Ogg files.
 $ npm install
 $ npm run build
 
-# Set a bot token (see .env.example)
+# Configure bot token, application id, and guild id (see .env.example)
 $ cp .env.example .env
 $ nano .env
 
