@@ -36,7 +36,7 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
 
-  _base:
+  examples/_base:
     dependencies:
       '@discordjs/opus':
         specifier: ^0.9.0
@@ -73,7 +73,7 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
 
-  basic:
+  examples/basic:
     dependencies:
       '@discordjs/voice':
         specifier: ^0.17.0
@@ -107,7 +107,7 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
 
-  radio-bot:
+  examples/radio-bot:
     dependencies:
       '@discordjs/voice':
         specifier: ^0.17.0
@@ -141,7 +141,7 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
 
-  recorder:
+  examples/recorder:
     dependencies:
       '@discordjs/opus':
         specifier: ^0.9.0

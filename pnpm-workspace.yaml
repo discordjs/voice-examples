@@ -1,5 +1,2 @@
 packages:
-  - '_base'
-  - 'basic'
-  - 'radio-bot'
-  - 'recorder'
+  - 'examples/*'
