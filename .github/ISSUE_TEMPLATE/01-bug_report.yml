@@ -5,7 +5,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use Discord for questions: https://discord.gg/djs
+        Thank you for filing an issue! If you are here to ask a question, use Discord instead: https://discord.gg/djs
+
+        This issue form is for @discordjs/voice examples
   - type: dropdown
     id: package
     attributes:
@@ -26,54 +28,34 @@ body:
         Tip: You can attach images or log files by clicking this area to highlight it and then dragging files into it.
       placeholder: |
         Steps to reproduce with below code sample:
-        1. do thing
-        2. do thing in Discord client
-        3. observe behavior
-        4. see error logs below
+        1. Do thing
+        2. Do thing in Discord client
+        3. Observe behavior
+        4. See error logs below
     validations:
       required: true
   - type: textarea
-    id: codesample
+    id: code_sample
     attributes:
       label: Code sample
-      description: Include a reproducible, minimal code sample. This will be automatically formatted into code, so no need for backticks.
-      render: typescript
-      placeholder: |
-        Your code sample should be...
-        ... Minimal - Use as little code as possible that still produces the same problem (and is understandable)
-        ... Complete - Provide all parts someone else needs to reproduce your problem
-        ... Reproducible - Test the code you're about to provide to make sure it reproduces the problem
-  - type: input
-    id: djs-voice-version
-    attributes:
-      label: '@discordjs/version version'
-      description: Which version of @discordjs/voice are you using? Run `npm list <package>` in your project directory and paste the output.
-    validations:
-      required: true
-  - type: input
-    id: node-version
-    attributes:
-      label: Node.js version
       description: |
-        Which version of Node.js are you using? Run `node --version` in your project directory and paste the output.
-        If you are using TypeScript, please include its version (`npm list typescript`) as well.
-      placeholder: Node.js version 20+ is required
-    validations:
-      required: true
-  - type: input
-    id: os
+        Your code sample should be:
+        1. Minimal - Use as little code as possible that still produces the same problem (and is understandable)
+        2. Complete - Provide all parts someone else needs to reproduce your problem
+        3. Reproducible - Test the code you're about to provide to make sure it reproduces the problem
+
+        This will be automatically formatted into code, so no need for backticks.
+      render: typescript
+  - type: textarea
+    id: versions
     attributes:
-      label: Operating system
-      description: Which OS does your application run on?
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority this issue should have
-      description: Please be realistic. If you need to elaborate on your reasoning, please use the Issue description field above.
-      options:
-        - Low (slightly annoying)
-        - Medium (should be fixed soon)
-        - High (immediate attention needed)
+      label: Versions
+      description: List necessary versions here. This includes your @discordjs/voice version, runtime version, operating system etc.
+      placeholder: |
+        - @discordjs/voice 0.17.0 (`npm ls @discordjs/voice`)
+        - Node.js 20.15.0 (`node --version`)
+        - TypeScript 5.4.5 (`npm ls typescript` if you use it)
+        - macOS Ventura 13.3.1
     validations:
       required: true
   - type: input
