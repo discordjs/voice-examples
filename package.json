@@ -34,22 +34,22 @@
 	},
 	"homepage": "https://discord.js.org",
 	"devDependencies": {
-		"@commitlint/cli": "^19.3.0",
-		"@commitlint/config-angular": "^19.3.0",
+		"@commitlint/cli": "^19.6.1",
+		"@commitlint/config-angular": "^19.7.0",
 		"eslint": "^8.57.0",
 		"eslint-config-neon": "^0.1.62",
-		"husky": "^9.0.11",
-		"is-ci": "^3.0.1",
-		"prettier": "^3.3.0",
+		"husky": "^9.1.7",
+		"is-ci": "^4.1.0",
+		"prettier": "^3.4.2",
 		"turbo": "^1.13.3",
-		"typescript": "5.4.5"
+		"typescript": "5.7.3"
 	},
 	"engines": {
 		"node": ">=20"
 	},
-	"packageManager": "pnpm@9.1.4",
+	"packageManager": "pnpm@9.15.4",
 	"volta": {
-		"node": "20",
-		"pnpm": "9.1.4"
+		"node": "20.18.2",
+		"pnpm": "9.15.4"
 	}
 }
