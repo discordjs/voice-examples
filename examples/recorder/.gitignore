@@ -1,0 +1,4 @@
+.env
+tsconfig.tsbuildinfo
+recordings/*.ogg
+dist
