@@ -27,7 +27,7 @@ All you have to do is copy an example of your choosing from the [examples](./exa
 - [Documentation](https://discord.js.org/docs/packages/voice/stable)
 - [Guide](https://discordjs.guide/) ([source](https://github.com/discordjs/guide))
 - [discord.js Discord server](https://discord.gg/djs)
-- [Discord API Discord server](https://discord.gg/discord-api)
+- [Discord Developers Discord server](https://discord.gg/discord-developers)
 - [GitHub](https://github.com/discordjs/discord.js/tree/main/packages/voice)
 - [npm](https://www.npmjs.com/package/@discordjs/voice)
 - [Related libraries](https://discord.com/developers/docs/topics/community-resources#libraries)
