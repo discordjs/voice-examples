@@ -25,7 +25,7 @@ All you have to do is copy an example of your choosing from the [examples](./exa
 
 - [Website](https://discord.js.org/) ([source](https://github.com/discordjs/discord.js/tree/main/apps/website))
 - [Documentation](https://discord.js.org/docs/packages/voice/stable)
-- [Guide](https://discordjs.guide/) ([source](https://github.com/discordjs/guide))
+- [Guide](https://discordjs.guide) ([source](https://github.com/discordjs/discord.js/tree/main/apps/guide))
 - [discord.js Discord server](https://discord.gg/djs)
 - [Discord Developers Discord server](https://discord.gg/discord-developers)
 - [GitHub](https://github.com/discordjs/discord.js/tree/main/packages/voice)
