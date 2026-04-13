@@ -30,7 +30,7 @@ All you have to do is copy an example of your choosing from the [examples](./exa
 - [Discord Developers Discord server](https://discord.gg/discord-developers)
 - [GitHub](https://github.com/discordjs/discord.js/tree/main/packages/voice)
 - [npm](https://www.npmjs.com/package/@discordjs/voice)
-- [Related libraries](https://discord.com/developers/docs/topics/community-resources#libraries)
+- [Related libraries](https://docs.discord.com/developers/developer-tools/community-resources#libraries)
 
 ## Contributing
 
